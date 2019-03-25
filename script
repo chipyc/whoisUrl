@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+domain=$(python -c "import whs; whs.domains()" $1)
+whois $domain
